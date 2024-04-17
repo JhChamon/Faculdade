@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Formulário</title>
+	</head>
+	<body>
+		<h1>Uso de formulário</h1>
+		<form method="get" action="grava.php">
+			<fieldset>
+				<legend>Dados pessoais</legend>
+				Nome:
+				<input
+					type="text"
+					id="nome"
+					name="nome"
+					size="20"
+					maxlength="20"
+					placeholder="Digite o nome completo"
+					autofocus
+				/>
+				<br />Senha:
+				<input
+					type="password"
+					id="Senha"
+					name="Senha"
+					maxlength="20"
+					placeholder="Digite sua senha"
+					autofocus
+				/>
+                <Br><input type="submit" value="Enviar">
+				<br /><br />Escolha um Carro ou Moto:<select
+					id="Carros e Motos"
+					name="Carros e Motos"
+				>
+					<option value="Mercedes">Mercedes</option>
+					<option value="Ford">Gol</option>
+					<option value="Honda">Bros</option>
+				</select>
+				<br /><br />Qual o seu estilo musical ?
+				<input id="Musicas" name="Musicas" type="text" list="listaestilos" />
+				<datalist id="listaestilos">
+					<br />
+					Escolha entre estes:
+					<option value="samba">Samba</option>
+					<option value="forro">Forro</option>
+					<option value="sertanejo">Sertanejo</option></datalist
+				><br />
+				Qual o seu sexo ? <br /><input
+					type="radio"
+					name="genero"
+					value="masculino"
+				/>Masculino<br />
+				<input type="radio" name="genero" value="feminimo" />Feminimo
+				<br />Quais esportes você pratica ? <br /><input
+					type="checkbox"
+					name="esporte"
+					value="natação"
+				/>Natação <br /><input
+					type="checkbox"
+					name="esporte1"
+					value="futebol"
+				/>Futebol <br /><input
+					type="checkbox"
+					name="esporte2"
+					value="league of legends"
+				/>League of legends <br />
+				<br />
+				<textarea name="menssagem" rows="10" cols="30" autofocus>
+                    Escreva sua mensagem aqui!!</textarea
+				>
+                <Br><input type="button" value="Enviar">
+                
+			</fieldset>
+		</form>
+        
+	</body>
+</html>
